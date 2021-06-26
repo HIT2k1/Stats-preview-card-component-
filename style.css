@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insight {
+  background-color: #090b1a;
+  width: 100%;
+}
+.insight__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10% 11.11%;
+  display: flex;
+}
+.insight__content, .insight__image {
+  width: 50%;
+}
+.insight__content {
+  background-color: #1b1938;
+  padding: 8rem 7rem 6.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.insight__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3rem;
+}
+.insight__title span {
+  color: #aa5cdb;
+}
+.insight__desc {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 8rem;
+  line-height: 1.6;
+}
+.insight__list {
+  display: flex;
+  align-items: center;
+}
+.insight__item {
+  margin-right: 6rem;
+}
+.insight__item--number {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.insight__item--name {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+.insight__image {
+  position: relative;
+}
+.insight__image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #aa5cdb;
+  opacity: 45%;
+  filter: brightness(50%) saturate(210%) contrast(160%);
+}
+.insight__image img, .insight__image .overlay {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .insight__container {
+    max-width: 1024px;
+    padding: 5% 6%;
+  }
+  .insight__content {
+    padding: 8rem 5rem 6.5rem;
+  }
+  .insight__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .insight__desc {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .insight__item {
+    margin-right: 3.5rem;
+  }
+  .insight__item--number {
+    font-size: 1.5rem;
+  }
+  .insight__item--name {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .insight__container {
+    max-width: 768px;
+  }
+  .insight__content {
+    padding: 6rem 3rem 4.5rem;
+  }
+  .insight__title {
+    font-size: 2rem;
+  }
+  .insight__item {
+    margin-right: 2rem;
+  }
+  .insight__item--number {
+    font-size: 1.2rem;
+  }
+  .insight__item--name {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .insight__container {
+    max-width: 375px;
+    padding: 8.5rem 2rem;
+    flex-direction: column-reverse;
+  }
+  .insight__content, .insight__image {
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .insight__content {
+    padding: 4rem 3.5rem;
+    text-align: center;
+  }
+  .insight__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .insight__desc {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+  .insight__list {
+    flex-direction: column;
+  }
+  .insight__item {
+    margin-right: 0;
+    margin-bottom: 3.5rem;
+  }
+  .insight__item--number {
+    font-size: 2rem;
+  }
+  .insight__item--name {
+    font-size: 1.2rem;
+  }
+  .insight__image img, .insight__image .overlay {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
