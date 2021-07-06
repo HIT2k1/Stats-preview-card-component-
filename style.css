@@ -141,6 +141,9 @@ img {
   }
 }
 @media only screen and (max-width: 480px) {
+  .insight {
+    height: auto;
+  }
   .insight__container {
     max-width: 375px;
     padding: 8.5rem 2rem;
